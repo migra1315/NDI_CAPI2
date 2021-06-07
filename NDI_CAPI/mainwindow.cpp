@@ -14,9 +14,9 @@ MainWindow::MainWindow(QWidget *parent) :
     options = 0;
 
     //初始化NDI连接、描述文件信息
-    hostname = "COM5";
-    ToolDefine1 = "D:\\Workspace\\NDI_CAPI\\res\\sroms\\probe.rom";
-    ToolDefine2 = "D:\\Workspace\\NDI_CAPI\\res\\sroms\\cross.rom";
+    hostname = "COM3";
+    ToolDefine1 = ".\\res\\sroms\\probe.rom";
+    ToolDefine2 = ".\\res\\sroms\\cross.rom";
 
     //0 初始化一些基础的操作
     //0.1 下拉菜单,退出

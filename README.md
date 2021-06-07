@@ -21,6 +21,8 @@
 1. 读取数据
 
    将数据以Json格式读出，并显示在ListWedgit中
+   
+   ![display](.\image\display.png)
 
 # 需要说明的地方
 

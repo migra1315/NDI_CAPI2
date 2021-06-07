@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FE66DF0F-800B-32B5-A093-65A838474243}</ProjectGuid>
+    <ProjectGuid>{862B8947-56F3-34A1-9258-EBEB92780580}</ProjectGuid>
     <RootNamespace>NDI_CAPI</RootNamespace>
     <Keyword>Qt4VSv1.0</Keyword>
   </PropertyGroup>
@@ -256,7 +256,7 @@
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties Qt5Version_x0020_x64="msvc2013" />
+      <UserProperties Qt5Version_x0020_x64="Qt5.10.1" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
