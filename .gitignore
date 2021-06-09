@@ -42,6 +42,15 @@ build-NDI_CAPI-Desktop_Qt_5_10_1_MSVC2013_64bit-Debug
 build-NDI_CAPI-Desktop_Qt_5_10_1_MSVC2013_64bit-Release
 build-readSharedMemory-Desktop_Qt_5_10_1_MSVC2013_64bit-Debug
 build-readSharedMemory-Desktop_Qt_5_10_1_MSVC2013_64bit-Release
+NDI_CAPI/debug
+NDI_CAPI/release
+readSharedMemory/debug
+readSharedMemory/release
 
 # 执行文件
 *.pro.user
+*.sdf
+*.v12.suo
+*.vcxproj
+*.vcxproj.filters
+.vcxproj.user
