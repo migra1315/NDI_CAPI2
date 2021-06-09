@@ -4,9 +4,26 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+#QT       += core gui
+#greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+INCLUDEPATH += "../3rd/Qt5.10.1/include/QtWidgets/"
+INCLUDEPATH += "../3rd/Qt5.10.1/include/QtCore/"
+INCLUDEPATH += "../3rd/Qt5.10.1/include/QtGui/"
+
+CONFIG(debug, debug|release): {
+LIBS += -L "../3rd/Qt5.10.1/lib" \
+-lQt5Cored \
+-lQt5Guid \
+-lQt5Widgetsd \
+-lqtmaind \
+} else:CONFIG(release, debug|release): {
+LIBS += -LG:/projects/NDI_CAPI2/3rd/Qt5.10.1/lib \
+-lQt5Cored \
+-lQt5Guid \
+-lQt5Widgetsd \
+-lqtmaind \
+}
 
 TARGET = readSharedMemory
 TEMPLATE = app

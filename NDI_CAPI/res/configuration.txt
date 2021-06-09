@@ -1,3 +1,0 @@
-COM3
-G:\\projects\\demo\\demo6\\res\\roms\\cross.rom
-G:\\projects\\demo\\demo6\\res\\sroms\\8700340.rom

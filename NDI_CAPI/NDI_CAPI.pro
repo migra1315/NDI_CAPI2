@@ -4,13 +4,32 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+#QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+#greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-INCLUDEPATH+="./library/include"
-INCLUDEPATH+="./library/src"
-INCLUDEPATH+="./library/src/include"
+INCLUDEPATH += "../3rd/Qt5.10.1/include/QtWidgets/"
+INCLUDEPATH += "../3rd/Qt5.10.1/include/QtCore/"
+INCLUDEPATH += "../3rd/Qt5.10.1/include/QtGui/"
+INCLUDEPATH += "../3rd/NDI/include/"
+INCLUDEPATH += "../3rd/NDI/src/"
+INCLUDEPATH += "../3rd/NDI/src/include/"
+
+
+CONFIG(debug, debug|release): {
+LIBS += -L../3rd/Qt5.10.1/lib \
+-lQt5Cored \
+-lQt5Guid \
+-lQt5Widgetsd \
+-lqtmaind \
+} else:CONFIG(release, debug|release): {
+LIBS += -LG:/projects/NDI_CAPI2/3rd/Qt5.10.1/lib \
+-lQt5Cored \
+-lQt5Guid \
+-lQt5Widgetsd \
+-lqtmaind \
+}
+
 #预宏定义
 DEFINES += CAPICOMMON_EXPORTS
 #使用多字节字符集
@@ -35,47 +54,47 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
     mythread.cpp \
-    library/src/BufferedReader.cpp \
-    library/src/CombinedApi.cpp \
-    library/src/ComConnection.cpp \
-    library/src/GbfButton1D.cpp \
-    library/src/GbfComponent.cpp \
-    library/src/GbfContainer.cpp \
-    library/src/GbfData3D.cpp \
-    library/src/GbfData6D.cpp \
-    library/src/GbfFrame.cpp \
-    library/src/GbfSystemAlert.cpp \
-    library/src/MarkerData.cpp \
-    library/src/PortHandleInfo.cpp \
-    library/src/SystemAlert.cpp \
-    library/src/SystemCRC.cpp \
-#    library/src/TcpConnection.cpp \
-    library/src/ToolData.cpp \
-    library/src/Transform.cpp \
+    ../3rd/NDI/src/BufferedReader.cpp \
+    ../3rd/NDI/src/CombinedApi.cpp \
+   ../3rd/NDI/src/ComConnection.cpp \
+    ../3rd/NDI/src/GbfButton1D.cpp \
+    ../3rd/NDI/src/GbfComponent.cpp \
+    ../3rd/NDI/src/GbfContainer.cpp \
+    ../3rd/NDI/src/GbfData3D.cpp \
+    ../3rd/NDI/src/GbfData6D.cpp \
+    ../3rd/NDI/src/GbfFrame.cpp \
+    ../3rd/NDI/src/GbfSystemAlert.cpp \
+    ../3rd/NDI/src/MarkerData.cpp \
+    ../3rd/NDI/src/PortHandleInfo.cpp \
+    ../3rd/NDI/src/SystemAlert.cpp \
+    ../3rd/NDI/src/SystemCRC.cpp \
+#    3rd/NDI/src/TcpConnection.cpp \
+    ../3rd/NDI/src/ToolData.cpp \
+    ../3rd/NDI/src/Transform.cpp \
     mainwindow.cpp \
     processtrackingdata.cpp
 
 HEADERS += \
     mythread.h \
-    library/include/CombinedApi.h \
-    library/include/MarkerData.h \
-    library/include/PortHandleInfo.h \
-    library/include/SystemAlert.h \
-    library/include/ToolData.h \
-    library/include/Transform.h \
-    library/src/include/BufferedReader.h \
-    library/src/include/ComConnection.h \
-    library/src/include/Connection.h \
-    library/src/include/GbfButton1D.h \
-    library/src/include/GbfComponent.h \
-    library/src/include/GbfContainer.h \
-    library/src/include/GbfData3D.h \
-    library/src/include/GbfData6D.h \
-    library/src/include/GbfFrame.h \
-    library/src/include/GbfSystemAlert.h \
-    library/src/include/qinfofile.h \
-    library/src/include/SystemCRC.h \
-#    library/src/include/TcpConnection.h
+    ../3rd/NDI/include/CombinedApi.h \
+    ../3rd/NDI/include/MarkerData.h \
+    ../3rd/NDI/include/PortHandleInfo.h \
+    ../3rd/NDI/include/SystemAlert.h \
+    ../3rd/NDI/include/ToolData.h \
+    ../3rd/NDI/include/Transform.h \
+    ../3rd/NDI/src/include/BufferedReader.h \
+    ../3rd/NDI/src/include/ComConnection.h \
+    ../3rd/NDI/src/include/Connection.h \
+    ../3rd/NDI/src/include/GbfButton1D.h \
+    ../3rd/NDI/src/include/GbfComponent.h \
+    ../3rd/NDI/src/include/GbfContainer.h \
+    ../3rd/NDI/src/include/GbfData3D.h \
+    ../3rd/NDI/src/include/GbfData6D.h \
+    ../3rd/NDI/src/include/GbfFrame.h \
+    ../3rd/NDI/src/include/GbfSystemAlert.h \
+    ../3rd/NDI/src/include/qinfofile.h \
+    ../3rd/NDI/src/include/SystemCRC.h \
+#    3rd/NDI/src/include/TcpConnection.h
     mainwindow.h \
     processtrackingdata.h
 
