@@ -23,7 +23,7 @@ LIBS += -L../3rd/Qt5.10.1/lib \
 -lQt5Widgetsd \
 -lqtmaind \
 } else:CONFIG(release, debug|release): {
-LIBS += -LG:/projects/NDI_CAPI2/3rd/Qt5.10.1/lib \
+LIBS += -L../3rd/Qt5.10.1/lib \
 -lQt5Cored \
 -lQt5Guid \
 -lQt5Widgetsd \
@@ -53,7 +53,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    mythread.cpp \
     ../3rd/NDI/src/BufferedReader.cpp \
     ../3rd/NDI/src/CombinedApi.cpp \
    ../3rd/NDI/src/ComConnection.cpp \
@@ -68,14 +67,12 @@ SOURCES += \
     ../3rd/NDI/src/PortHandleInfo.cpp \
     ../3rd/NDI/src/SystemAlert.cpp \
     ../3rd/NDI/src/SystemCRC.cpp \
-#    3rd/NDI/src/TcpConnection.cpp \
     ../3rd/NDI/src/ToolData.cpp \
     ../3rd/NDI/src/Transform.cpp \
     mainwindow.cpp \
     processtrackingdata.cpp
 
 HEADERS += \
-    mythread.h \
     ../3rd/NDI/include/CombinedApi.h \
     ../3rd/NDI/include/MarkerData.h \
     ../3rd/NDI/include/PortHandleInfo.h \
@@ -94,7 +91,6 @@ HEADERS += \
     ../3rd/NDI/src/include/GbfSystemAlert.h \
     ../3rd/NDI/src/include/qinfofile.h \
     ../3rd/NDI/src/include/SystemCRC.h \
-#    3rd/NDI/src/include/TcpConnection.h
     mainwindow.h \
     processtrackingdata.h
 

@@ -558,4 +558,5 @@ void MainWindow::determineApiSupportForBX2()
 void MainWindow::recSlot(QString str)
 {
     qDebug()<<str;
+    ui->listWidget->addItem(str);
 }
