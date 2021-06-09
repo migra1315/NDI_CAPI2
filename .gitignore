@@ -34,7 +34,8 @@
 *.app
 
 # 3rd
-./3rd
+3rd
+3rd.7z
 
 # Debug和Release文件夹
 build-NDI_CAPI-Desktop_Qt_5_10_1_MSVC2013_64bit-Debug
