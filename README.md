@@ -15,6 +15,8 @@
  3. TrackSimulate
 
     将模拟数据以Json格式存入共享内存
+    
+    ![NDI_CAPI](F:\NDI_CAPI2\image_for_markdown\NDI_CAPI.png)
 
 ## readShareMemory中
 
