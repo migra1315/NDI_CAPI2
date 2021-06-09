@@ -53,4 +53,4 @@ readSharedMemory/release
 *.v12.suo
 *.vcxproj
 *.vcxproj.filters
-.vcxproj.user
+*.vcxproj.user
