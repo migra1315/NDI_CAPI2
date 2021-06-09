@@ -27,17 +27,20 @@
 # 需要说明的地方
 
 关于与NDI连接时的配置日志信息，仍然是以emit Signals 形式发出，一个对应的Slot qDebug()<<"log"
-#文件内容结构
+
+# 文件内容结构
+
 - NDI_CAPI2
-	- README.MD
+	- README.md
 	- image_for_markdown
 	- NDI_CAPI
+	  - res	#存储NDI描述文件
+	  - .pro/.sln/.h/.cpp……
 	- readSharedMemory
+	  - .pro/.sln/.h/.cpp……
 	- dll_store
-	- 3rd 
-链接：https://pan.baidu.com/s/1E0lHHCB4XDs0FOJu9Vfvmw 
-提取码：vivx 
-复制这段内容后打开百度网盘手机App，操作更方便哦
+	  - 两个进程的Debug/Release发布的.exe及其依赖库
+	- 3rd （链接：https://pan.baidu.com/s/17_-1snLo6mBgBR_Z0gQlog 提取码：4db9  ）
 
 
 ​    
